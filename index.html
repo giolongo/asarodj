@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagina di esempio</title>
+    <!-- Collegamento al file CSS dalla cartella 'css' -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="initial-image" class="h-100v">
+    <div id="menu" style="position: relative">
+        <div id="logo">
+            <img src="assets/logo.png"/>
+        </div>
+        <div id="elements">
+            <a href="#social" class="element">Social</a>
+            <a href="#contact" class="element">Contact</a>
+            <a href="#event" class="element">Event</a>
+            <a href="#music" class="element">Music</a>
+        </div>
+    </div>
+</div>
+<div class="navbar" id="navbar" style="z-index: 100">
+    <div id="logo-navbar">
+        <img src="assets/logo.png"/>
+    </div>
+    <div id="elements-navbar">
+        <a href="#social" class="element">Social</a>
+        <a href="#contact" class="element">Contact</a>
+        <a href="#event" class="element">Event</a>
+        <a href="#music" class="element">Music</a>
+    </div>
+
+</div>
+<div id="music" class="h-100v" style="width: 100%; display: flex; flex-direction: column;">
+    <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">My Music</h1>
+    <div style="display: flex; justify-content: center; width: 100%; margin-top: auto; margin-bottom: auto">
+        <iframe style="border-radius: 12px; width: 80%; max-width: 90%;"
+                src="https://open.spotify.com/embed/artist/0D8jrrP4SxBUbeCv0xZUNE?utm_source=generator&theme=0"
+                height="500" frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+    </div>
+</div>
+
+<div id="event" class="h-100v" style="width: 100%; display: flex; flex-direction: column; text-align: right">
+    <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Event</h1>
+    <div style="display: flex; justify-content: left; width: 100%; margin-top: auto; margin-bottom: auto">
+        <img src="assets/1.jpeg" width="20%"/>
+        <h3 class="black" style="margin-left: 2rem">
+            What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+            Where does it come from?
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+            during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+            section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+            original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+            Where can I get some?
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+            words etc.
+        </h3>
+    </div>
+</div>
+
+<div id="contact" class="h-100v" style="width: 100%; display: flex; flex-direction: column;">
+    <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Contact</h1>
+    <div style="display: flex; width: 100%; margin-top: auto; margin-bottom: auto; flex-direction: row; align-items: center;">
+        <!-- Immagine a sinistra -->
+        <div style="display: flex; flex-direction: column">
+            <a href="https://wa.me/:393480141461">
+                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+                    <img src="assets/icons/whatsapp.png" width="32" style="margin-right: 10px;"> (Whatsapp) +39
+                    3480141461
+                </h2>
+            </a>
+            <a href="tel:+393480141461">
+                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+                    <img src="assets/icons/tel.png" width="32" style="margin-right: 10px;"> (Tel) +39 3480141461
+                </h2>
+            </a>
+            <a href="mailto:ok@ok.it">
+                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+                    <img src="assets/icons/gmail.png" width="32" style="margin-right: 10px;"> ok@ok.it
+                </h2>
+            </a>
+        </div>
+        <!-- Immagine del profilo a destra -->
+        <img src="assets/2.jpeg" width="20%" style="margin-left: auto;"/>
+    </div>
+</div>
+<div id="social" class="h-100v" style="width: 100%; display: flex; flex-direction: column; text-align: right">
+<h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Social</h1>
+<div style="display: flex; width: 100%; margin: auto; justify-content: center">
+    <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">
+        <img src="assets/icons/whatsapp-big.png" width="300" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.facebook.com/andrea.asaro.31" target="_blank">
+        <img src="assets/icons/facebook-big.png" width="300" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">
+        <img src="assets/icons/instagram-big.png" width="300" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.tiktok.com/@andrea_asaro_dj" target="_blank">
+        <img src="assets/icons/tiktok-big.png" width="280" style="margin-right: 10px;">
+    </a>
+</div>
+</div>
+
+<!-- Collegamento allo script JavaScript dalla cartella 'js' -->
+<script src="js/scripts.js"></script>
+</body>
+<footer>
+    <div class="footer" id="footer" style="z-index: 100">
+        <div id="logo-footer">
+            <img src="assets/logo.png" height="100%"/>
+        </div>
+        <div id="elements-footer" style="text-align: right; width: 100%">
+            <a target="_blank" href="https://wa.me/:393480141461">
+                <h5 style="margin: auto; display: flex; align-items: center;">
+                    <img src="assets/icons/whatsapp.png" width="32" style="margin-right: 10px;">
+                </h5>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/andrea.asaro.31">
+                <h5 style="margin: auto; display: flex; align-items: center;">
+                    <img src="assets/icons/facebook.png" width="32" style="margin-right: 10px;">
+                </h5>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/andrea_asaro_dj/">
+                <h5 style="margin: auto; display: flex; align-items: center;">
+                    <img src="assets/icons/instagram.png" width="32" style="margin-right: 10px;">
+                </h5>
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@andrea_asaro_dj">
+                <h5 style="margin: auto; display: flex; align-items: center;">
+                    <img src="assets/icons/tiktok.png" width="32" style="margin-right: 10px;">
+                </h5>
+            </a>
+            <a href="https://www.linkedin.com/in/giovanni-emanuele-longo-716b2a100/" target="_blank"
+               style="margin-top: auto; margin-bottom: auto; margin-right: .75rem; font-size: .75rem">Developed
+                By Giovanni Emanuele Longo</a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,189 @@
+/* Variabili per colori e dimensioni */
+:root {
+    --main-color: white;
+    --background-color: rgba(0, 0, 0, 0.8);
+    --font-size-large: 2.5rem;
+    --font-size-medium: 2rem;
+    --navbar-height: 10vh;
+    --footer-height: 5vh;
+    --padding-right: 5%;
+}
+
+/* Font face */
+@font-face {
+    font-family: 'CyberPrincess3D';
+    src: url('../assets/fonts/CyberPrincess3D.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    color: var(--main-color);
+    font-family: 'CyberPrincess3D', sans-serif;
+}
+
+
+
+/* Logo styling */
+#logo #logo-navbar {
+    position: relative;
+}
+
+#logo > img {
+    height: 100%;
+}
+
+#logo-navbar > img {
+    height: 100%;
+}
+
+/* Background image settings */
+#initial-image {
+    background-image: url('../assets/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Viewport height and width */
+.h-100v {
+    height: 100vh;
+}
+
+.w-100v {
+    width: 100vw;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    width: 100%;
+    height: var(--navbar-height);
+}
+
+/* Element container styles */
+#elements, #elements-navbar, #elements-footer {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+/* Individual element */
+.element {
+    font-size: var(--font-size-large);
+    padding-right: var(--padding-right);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--background-color);
+    color: var(--main-color);
+    text-align: center;
+    transform: translateY(-100%); /* Hidden by default */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Navbar visible */
+.navbar.visible {
+    transform: translateY(0); /* Show when visible */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--background-color);
+    color: var(--main-color);
+    text-align: center;
+}
+
+/* Hyperlinks */
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Animations */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation helper classes */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animate-right {
+    animation: slideInRight 1s forwards;
+}
+
+.animate-left {
+    animation: slideInLeft 1s forwards;
+}
+
+/* Utility class for text color */
+.black {
+    color: black;
+}
+
+@media screen and (max-width: 1280px) {
+    #logo > img {
+        height: 50%;
+    }
+
+    #logo-navbar > img {
+        height: 30%;
+    }
+    .element {
+        font-size: var(--font-size-medium);
+        padding-right: var(--padding-right);
+    }
+
+    #elements, #elements-navbar, #elements-footer {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        width: 100%;
+        margin: auto;
+        text-align: right;
+    }
+}
+
