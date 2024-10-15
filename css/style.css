@@ -30,6 +30,15 @@ body {
     font-family: 'CyberPrincess3D', sans-serif;
 }
 
+p {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 
 
 /* Logo styling */
@@ -173,6 +182,7 @@ a, a:hover, a:visited {
     #logo-navbar > img {
         height: 30%;
     }
+
     .element {
         font-size: var(--font-size-medium);
         padding-right: var(--padding-right);
@@ -185,5 +195,81 @@ a, a:hover, a:visited {
         margin: auto;
         text-align: right;
     }
+
+    .hidden-img {
+        display: none;
+    }
+
+    p {
+        font-size: 1em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    .element {
+        font-size: 1.5em;
+    }
 }
+
+@media screen and (max-width: 770px) {
+    .hidden-logo {
+        display: none;
+    }
+
+    p {
+        font-size: .8em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    .element {
+        padding: 0;
+    }
+
+    #elements, #elements-navbar {
+        justify-content: space-between;
+    }
+
+    .references {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: .75rem;
+        font-size: .75rem;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .element {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .element {
+        font-size: .9em;
+    }
+
+    .references {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1em;
+        font-size: .5rem
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .footer {
+        height: 10vh;
+    }
+}
+
 

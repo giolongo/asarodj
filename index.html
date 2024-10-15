@@ -11,33 +11,33 @@
 <body>
 <div id="initial-image" class="h-100v">
     <div id="menu" style="position: relative">
-        <div id="logo">
-            <img src="assets/logo.png"/>
+        <div id="logo" class="hidden-logo" style="margin: auto;">
+            <img src="assets/logo.png" width="70%"/>
         </div>
         <div id="elements">
-            <a href="#social" class="element">Social</a>
-            <a href="#contact" class="element">Contact</a>
-            <a href="#event" class="element">Event</a>
             <a href="#music" class="element">Music</a>
+            <a href="#event" class="element">Event</a>
+            <a href="#contact" class="element">Contact</a>
+            <a href="#social" class="element">Social</a>
         </div>
     </div>
 </div>
 <div class="navbar" id="navbar" style="z-index: 100">
-    <div id="logo-navbar">
-        <img src="assets/logo.png"/>
+    <div id="logo-navbar" class="hidden-logo" style="margin: auto; text-align: left">
+        <img width="35%" src="assets/logo.png"/>
     </div>
     <div id="elements-navbar">
-        <a href="#social" class="element">Social</a>
-        <a href="#contact" class="element">Contact</a>
-        <a href="#event" class="element">Event</a>
         <a href="#music" class="element">Music</a>
+        <a href="#event" class="element">Event</a>
+        <a href="#contact" class="element">Contact</a>
+        <a href="#social" class="element">Social</a>
     </div>
 
 </div>
-<div id="music" class="h-100v" style="width: 100%; display: flex; flex-direction: column;">
+<div id="music" style="width: 100%; height: 100%; display: flex; flex-direction: column;">
     <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">My Music</h1>
     <div style="display: flex; justify-content: center; width: 100%; margin-top: auto; margin-bottom: auto">
-        <iframe style="border-radius: 12px; width: 80%; max-width: 90%;"
+        <iframe style="border-radius: 12px; width: 70%; max-width: 90%;"
                 src="https://open.spotify.com/embed/artist/0D8jrrP4SxBUbeCv0xZUNE?utm_source=generator&theme=0"
                 height="500" frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -45,11 +45,11 @@
     </div>
 </div>
 
-<div id="event" class="h-100v" style="width: 100%; display: flex; flex-direction: column; text-align: right">
+<div id="event" style="width: 100%; height: 100%; display: flex; flex-direction: column; text-align: right">
     <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Event</h1>
-    <div style="display: flex; justify-content: left; width: 100%; margin-top: auto; margin-bottom: auto">
-        <img src="assets/1.jpeg" width="20%"/>
-        <h3 class="black" style="margin-left: 2rem">
+    <div style="display: flex; width: 100%; margin-top: auto; margin-bottom: auto; flex-direction: row; align-items: center;">
+        <img class="hidden-img" src="assets/1.jpeg" width="30%"/>
+        <p class="black" style="margin-left: 2rem">
             What is Lorem Ipsum?
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -90,7 +90,7 @@
             words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
             The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
             words etc.
-        </h3>
+        </p>
     </div>
 </div>
 
@@ -99,77 +99,76 @@
     <div style="display: flex; width: 100%; margin-top: auto; margin-bottom: auto; flex-direction: row; align-items: center;">
         <!-- Immagine a sinistra -->
         <div style="display: flex; flex-direction: column">
-            <a href="https://wa.me/:393480141461">
-                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+            <a href="https://wa.me/:asdasdasdas">
+                <p class="black" style="margin-left: 2rem; display: flex; align-items: center;">
                     <img src="assets/icons/whatsapp.png" width="32" style="margin-right: 10px;"> (Whatsapp) +39
-                    3480141461
-                </h2>
+                    15218143615
+                </p>
             </a>
-            <a href="tel:+393480141461">
-                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
-                    <img src="assets/icons/tel.png" width="32" style="margin-right: 10px;"> (Tel) +39 3480141461
-                </h2>
+            <a href="tel:+asdasdasd">
+                <p class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+                    <img src="assets/icons/tel.png" width="32" style="margin-right: 10px;"> (Tel) +39 15218143615
+                </p>
             </a>
             <a href="mailto:ok@ok.it">
-                <h2 class="black" style="margin-left: 2rem; display: flex; align-items: center;">
+                <p class="black" style="margin-left: 2rem; display: flex; align-items: center;">
                     <img src="assets/icons/gmail.png" width="32" style="margin-right: 10px;"> ok@ok.it
-                </h2>
+                </p>
             </a>
         </div>
         <!-- Immagine del profilo a destra -->
-        <img src="assets/2.jpeg" width="20%" style="margin-left: auto;"/>
+        <img class="hidden-img" src="assets/2.jpeg" width="30%" style="margin-left: auto;"/>
     </div>
 </div>
-<div id="social" class="h-100v" style="width: 100%; display: flex; flex-direction: column; text-align: right">
-<h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Social</h1>
-<div style="display: flex; width: 100%; margin: auto; justify-content: center">
-    <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">
-        <img src="assets/icons/whatsapp-big.png" width="300" style="margin-right: 10px;">
-    </a>
-    <a href="https://www.facebook.com/andrea.asaro.31" target="_blank">
-        <img src="assets/icons/facebook-big.png" width="300" style="margin-right: 10px;">
-    </a>
-    <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">
-        <img src="assets/icons/instagram-big.png" width="300" style="margin-right: 10px;">
-    </a>
-    <a href="https://www.tiktok.com/@andrea_asaro_dj" target="_blank">
-        <img src="assets/icons/tiktok-big.png" width="280" style="margin-right: 10px;">
-    </a>
-</div>
-</div>
+<!--<div id="social" class="h-100v" style="width: 100%; display: flex; flex-direction: column; text-align: right">-->
+<!--    <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">Social</h1>-->
+<!--    <div style="display: flex; width: 100%; margin: auto; justify-content: center">-->
+<!--        <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">-->
+<!--            <img src="assets/icons/whatsapp-big.png" width="300" style="margin-right: 10px;">-->
+<!--        </a>-->
+<!--        <a href="https://www.facebook.com/andrea.asaro.31" target="_blank">-->
+<!--            <img src="assets/icons/facebook-big.png" width="300" style="margin-right: 10px;">-->
+<!--        </a>-->
+<!--        <a href="https://www.instagram.com/andrea_asaro_dj/" target="_blank">-->
+<!--            <img src="assets/icons/instagram-big.png" width="300" style="margin-right: 10px;">-->
+<!--        </a>-->
+<!--        <a href="https://www.tiktok.com/@andrea_asaro_dj" target="_blank">-->
+<!--            <img src="assets/icons/tiktok-big.png" width="280" style="margin-right: 10px;">-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!-- Collegamento allo script JavaScript dalla cartella 'js' -->
 <script src="js/scripts.js"></script>
 </body>
 <footer>
     <div class="footer" id="footer" style="z-index: 100">
-        <div id="logo-footer">
-            <img src="assets/logo.png" height="100%"/>
+        <div id="logo-footer" style="margin-top: auto; margin-bottom: auto; text-align: left">
+            <img src="assets/logo.png" width="35%"/>
         </div>
-        <div id="elements-footer" style="text-align: right; width: 100%">
-            <a target="_blank" href="https://wa.me/:393480141461">
+        <div id="elements-footer" style="text-align: right; width: 100%; height: 100%">
+            <a target="_blank" href="https://wa.me/:393480141461" style="margin: auto">
                 <h5 style="margin: auto; display: flex; align-items: center;">
-                    <img src="assets/icons/whatsapp.png" width="32" style="margin-right: 10px;">
+                    <img src="assets/icons/whatsapp.png" width="20" style="margin-right: 10px;">
                 </h5>
             </a>
-            <a target="_blank" href="https://www.facebook.com/andrea.asaro.31">
+            <a target="_blank" href="https://www.facebook.com/andrea.asaro.31" style="margin: auto">
                 <h5 style="margin: auto; display: flex; align-items: center;">
-                    <img src="assets/icons/facebook.png" width="32" style="margin-right: 10px;">
+                    <img src="assets/icons/facebook.png" width="20" style="margin-right: 10px;">
                 </h5>
             </a>
-            <a target="_blank" href="https://www.instagram.com/andrea_asaro_dj/">
+            <a target="_blank" href="https://www.instagram.com/andrea_asaro_dj/" style="margin: auto">
                 <h5 style="margin: auto; display: flex; align-items: center;">
-                    <img src="assets/icons/instagram.png" width="32" style="margin-right: 10px;">
+                    <img src="assets/icons/instagram.png" width="20" style="margin-right: 10px;">
                 </h5>
             </a>
-            <a target="_blank" href="https://www.tiktok.com/@andrea_asaro_dj">
+            <a target="_blank" href="https://www.tiktok.com/@andrea_asaro_dj" style="margin: auto">
                 <h5 style="margin: auto; display: flex; align-items: center;">
-                    <img src="assets/icons/tiktok.png" width="32" style="margin-right: 10px;">
+                    <img src="assets/icons/tiktok.png" width="20" style="margin: auto;">
                 </h5>
             </a>
-            <a href="https://www.linkedin.com/in/giovanni-emanuele-longo-716b2a100/" target="_blank"
-               style="margin-top: auto; margin-bottom: auto; margin-right: .75rem; font-size: .75rem">Developed
-                By Giovanni Emanuele Longo</a>
+            <a class="references" href="https://www.linkedin.com/in/giovanni-emanuele-longo-716b2a100/" style="margin: auto" target="_blank">
+                GLE©</a>
         </div>
     </div>
 </footer>
