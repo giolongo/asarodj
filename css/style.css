@@ -302,10 +302,10 @@ a, a:hover, a:visited {
     }
 }
 
-@media screen and (max-height: 40px) {
+@media screen and (max-height: 400px) {
 
     #burger-img #logo{
-        max-width: 38%;
+        max-width: 40%;
     }
 }
 
