@@ -237,7 +237,7 @@ a, a:hover, a:visited {
         background-color: rgba(253, 249, 255, .6);
         padding: 1rem;
     }
-    #buger-img {
+    #burger-img {
         border: 1px solid black;
         border-radius: 20%;
         background-color: rgba(218, 253, 254, 0.5);
