@@ -5,6 +5,7 @@
     --font-size-large: 2.5rem;
     --font-size-medium: 2rem;
     --navbar-height: 10vh;
+    --navbar-height-500: 12vh;
     --footer-height: 5vh;
     --padding-right: 5%;
 }
@@ -295,6 +296,10 @@ a, a:hover, a:visited {
 @media screen and (max-height: 500px) {
     .footer {
         height: 10vh;
+    }
+
+    #menu {
+        height: var(--navbar-height-500);
     }
 }
 
