@@ -11,8 +11,11 @@
 <body>
 <div id="initial-image" class="h-100v">
     <div id="menu" style="position: relative">
-        <div id="logo" class="hidden-logo" style="margin: auto;">
-            <img src="assets/logo.png" width="70%"/>
+        <div id="logo" style="margin: auto;">
+            <img src="assets/logo.png" width="50%"/>
+        </div>
+        <div id="hamburger" onclick="openCloseMenu()">
+            <img id="burger-img" width="10%" src="assets/icons/burger.svg">
         </div>
         <div id="elements">
             <a href="#music" class="element">Music</a>
@@ -21,10 +24,16 @@
             <a href="#social" class="element">Social</a>
         </div>
     </div>
+    <div class="hamburger-menu" id="hamburger-menu">
+        <a class="element" href="#music">Music</a>
+        <a class="element" href="#event">Event</a>
+        <a class="element" href="#contact">Contact</a>
+        <a class="element" href="#social">Social</a>
+    </div>
 </div>
 <div class="navbar" id="navbar" style="z-index: 100">
-    <div id="logo-navbar" class="hidden-logo" style="margin: auto; text-align: left">
-        <img width="35%" src="assets/logo.png"/>
+    <div id="logo-navbar" style="margin: auto; text-align: left">
+        <img width="20%" src="assets/logo.png"/>
     </div>
     <div id="elements-navbar">
         <a href="#music" class="element">Music</a>
@@ -32,7 +41,6 @@
         <a href="#contact" class="element">Contact</a>
         <a href="#social" class="element">Social</a>
     </div>
-
 </div>
 <div id="music" style="width: 100%; height: 100%; display: flex; flex-direction: column;">
     <h1 class="black" style="margin-top: 11vh; margin-bottom: 20px;">My Music</h1>
@@ -146,7 +154,7 @@
         <div id="logo-footer" style="margin-top: auto; margin-bottom: auto; text-align: left">
             <img src="assets/logo.png" width="35%"/>
         </div>
-        <div id="elements-footer" style="display: flex;text-align: right;width: 100%;height: 100%;margin-top: auto;align-items: center;margin-right: 1rem;">
+        <div id="elements-footer" style="display: flex;text-align: right;width: 100%;height: 100%;margin-top: auto;align-items: center;margin-right: .5rem;">
             <a target="_blank" href="https://wa.me/:dfsdfsdf">
                 <img src="assets/icons/whatsapp.png" width="20" style="margin-right: 10px;">
             </a>
@@ -160,8 +168,7 @@
                 <img src="assets/icons/tiktok.png" width="20" style="margin-right: 0;">
             </a>
             <a class="references" href="https://www.linkedin.com/in/giovanni-emanuele-longo-716b2a100/"
-               style="margin-left: 2rem" target="_blank">
-                GLE©</a>
+               style="margin-left: 2rem" target="_blank">  <img src="assets/icons/gle.png" width="30" style="margin-right: 0;"></a>
         </div>
     </div>
 </footer>

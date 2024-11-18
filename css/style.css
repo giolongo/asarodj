@@ -4,7 +4,7 @@
     --background-color: rgba(0, 0, 0, 0.8);
     --font-size-large: 2.5rem;
     --font-size-medium: 2rem;
-    --navbar-height: 10vh;
+    --navbar-height: 7vh;
     --footer-height: 5vh;
     --padding-right: 5%;
 }
@@ -40,6 +40,13 @@ p {
     unicode-bidi: isolate;
 }
 
+#hamburger {
+    display: none;
+}
+
+.hamburger-menu{
+    display: none;
+}
 
 /* Logo styling */
 #logo #logo-navbar {
@@ -211,11 +218,31 @@ a, a:hover, a:visited {
     }
 
     .element {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 
 @media screen and (max-width: 770px) {
+    #navbar{display: none}
+    #elements, #elements-navbar { display: none}
+    #hamburger {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+        cursor: pointer;
+    }
+    .hamburger-menu{
+        justify-content: space-between;
+        background-color: rgba(253, 249, 255, .6);
+        padding: 1rem;
+    }
+    #buger-img {
+        border: 1px solid black;
+        border-radius: 20%;
+        background-color: rgba(218, 253, 254, 0.5);
+        margin-right: .25rem;
+    }
     .hidden-logo {
         display: none;
     }
@@ -243,7 +270,6 @@ a, a:hover, a:visited {
         margin-bottom: auto;
         margin-right: .75rem;
         font-size: .75rem;
-        display: none;
     }
 }
 

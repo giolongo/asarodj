@@ -41,4 +41,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+function openCloseMenu() {
+    const menu = document.getElementById('hamburger-menu');
+    const burgerImg = document.getElementById('burger-img');
+    if (menu) {
+        if (getComputedStyle(menu).display === 'none') {
+            // Se l'elemento è nascosto, lo mostriamo
+            menu.style.display = 'flex';
+            menu.style.opacity = '0';
+            setTimeout(() => {
+                menu.style.transition = 'opacity 0.5s';
+                menu.style.opacity = '1';
+                burgerImg.style.transition = 'transform 0.5s';
+                burgerImg.style.transform = 'rotate(90deg)';
+            }, 10);
+        } else {
+            // Se l'elemento è visibile, lo nascondiamo
+            menu.style.transition = 'opacity 0.5s';
+            burgerImg.style.transform = 'rotate(0deg)';
+            menu.style.opacity = '0';
+            setTimeout(() => {
+                menu.style.display = 'none';
+            }, 500); // Aspettiamo che l'animazione sia completata
+        }
+    } else {
+        console.error('Elemento con id "ciao" non trovato.');
+    }
+}
