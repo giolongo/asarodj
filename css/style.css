@@ -18,6 +18,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Morguns';
+    src: url('../assets/fonts/Morguns.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Scroll */
 html {
     scroll-behavior: smooth;
@@ -31,6 +38,15 @@ body {
     font-family: 'CyberPrincess3D', sans-serif;
 }
 
+.navbar > #logo-navbar{
+	height: 100%;
+	width: 15%;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
 p {
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -41,25 +57,22 @@ p {
     unicode-bidi: isolate;
 }
 
-#hamburger {
-    display: none;
-}
-
-.hamburger-menu{
+.hamburger-menu {
     display: none;
 }
 
 /* Logo styling */
-#logo #logo-navbar {
+#logo {
     position: relative;
+}
+
+#burger-img {
+	display: none;
 }
 
 #logo > img {
     height: 100%;
-}
-
-#logo-navbar > img {
-    height: 100%;
+	width: 100%;
 }
 
 /* Background image settings */
@@ -183,13 +196,10 @@ a, a:hover, a:visited {
 }
 
 @media screen and (max-width: 1280px) {
-    #logo > img {
-        height: 50%;
-    }
-
-    #logo-navbar > img {
-        height: 30%;
-    }
+	
+	.navbar > #logo-navbar{
+		width: 20%;
+	}
 
     .element {
         font-size: var(--font-size-medium);
@@ -226,23 +236,21 @@ a, a:hover, a:visited {
 @media screen and (max-width: 770px) {
     #navbar{display: none}
     #elements, #elements-navbar { display: none}
-    #hamburger {
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
-        text-align: right;
-        cursor: pointer;
-    }
     .hamburger-menu{
         justify-content: space-between;
         background-color: rgba(253, 249, 255, .6);
         padding: 1rem;
     }
     #burger-img {
+		display: block;
         border: 1px solid black;
         border-radius: 20%;
         background-color: rgba(218, 253, 254, 0.5);
         margin-right: .25rem;
+		margin-left: auto;
+		margin-top:1rem;
+		margin-bottom:1rem;
+		cursor: pointer;
     }
     .hidden-logo {
         display: none;
