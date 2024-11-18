@@ -297,9 +297,15 @@ a, a:hover, a:visited {
     .footer {
         height: 10vh;
     }
-
     #menu {
         height: var(--navbar-height-500);
+    }
+}
+
+@media screen and (max-height: 40px) {
+
+    #burger-img #logo{
+        max-width: 40%;
     }
 }
 
