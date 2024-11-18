@@ -305,7 +305,7 @@ a, a:hover, a:visited {
 @media screen and (max-height: 40px) {
 
     #burger-img #logo{
-        max-width: 40%;
+        max-width: 38%;
     }
 }
 
