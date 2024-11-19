@@ -196,7 +196,7 @@ a, a:hover, a:visited {
 }
 
 @media screen and (max-width: 1280px) {
-	
+
 	.navbar > #logo-navbar{
 		width: 20%;
 	}
@@ -246,9 +246,9 @@ a, a:hover, a:visited {
         border: 1px solid black;
         border-radius: 20%;
         background-color: rgba(218, 253, 254, 0.5);
-        margin-right: .25rem;
+        margin-right: 1.25rem;
 		margin-left: auto;
-		margin-top:.5rem;
+		margin-top: 1.5rem;
 		margin-bottom:.5rem;
 		cursor: pointer;
     }
