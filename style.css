@@ -10,6 +10,8 @@
 a {
     height: 100%;
     width: 100%;
+    color: inherit;
+    text-decoration: inherit;
 }
 body {
     height: 100vh;
