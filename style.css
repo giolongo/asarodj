@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+    --font-family: "Ubuntu";
+}
+
+* {
+    font-family: var(--font-family);
+}
+a {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    color: white;
+    background-image: url('img/sfondo.jpg');
+    background-size: cover; /* Adatta l'immagine all'intero schermo */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+    background-position: center; /* Centra l'immagine */
+
+    /* Imposta un colore di sfondo semi-trasparente */
+    background-blend-mode: overlay; /* Mescola l'immagine con il colore */
+}
+
+.content {
+    height: 100%;
+    position: absolute;
+    right: 30vw;
+    left: 30vw;
+    width: 40vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.logo-container {
+    margin-top: .5vh;
+    height: 40vh;
+    width: 100%;
+    position: relative; /* Necessario per posizionare il pseudo-elemento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%; /* Dimensioni della "luce" */
+    width: 50%;
+    background: radial-gradient(
+            circle,
+            rgba(255, 255, 0, 0.8) 0%,
+            rgb(255, 115, 0) 50%,
+            rgba(255, 255, 0, 0) 100%
+    ); /* Simula la luce che si diffonde */
+    filter: blur(30px); /* Effetto sfocato per morbidezza */
+    z-index: 0; /* Posiziona dietro l'immagine */
+    border-radius: 100%; /* Per garantire una forma circolare */
+}
+
+.logo {
+    transition: transform 0.2s;
+    height: 99%;
+    width: 100%;
+    cursor: pointer;
+    object-fit: contain;
+    position: relative; /* Necessario per sovrapporre al pseudo-elemento */
+    z-index: 1; /* Posiziona sopra il pseudo-elemento */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo-container:hover {
+    transform: scale(1.1);
+}
+
+.social {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.social-container {
+    margin-top: .5vh;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100%;
+}
+
+.social-container img {
+    height: 5vh;
+    margin-right: .5vw;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-container img:hover {
+    transform: scale(1.2); /* Ingrandisce l'immagine del 20% */
+}
+
+.bg-layer {
+    background-color: rgba(255,255,255,0.3);
+    height: 100vh; width: 100vw;
+}
+
+.separator {
+    border-bottom: 5px solid white;
+}
+
+.little-container {
+     width: 100%;
+     display: flex;
+     margin-top: 5vh;
+ }
+
+.neon-text {
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 80px #ffa500;
+    animation: neon-flicker 2s infinite;
+}
+
+.contact {
+    margin: auto 0 auto auto;
+}
+
+.contact-icon {
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+.little-margin {
+    margin: .5vh .5vw;
+}
+
+.margin-y-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@keyframes neon-flicker {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 80px #ffa500;
+    }
+    50% {
+        opacity: 0.3;
+        text-shadow: 0 0 2px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 20px #ffa500;
+    }
+}
+
+.btn-primary-custom {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 3vh;
+    text-decoration: none !important;
+    border: 1px solid #ffa500 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background-color: transparent !important;
+    border-radius: .3rem !important;
+    font-weight: 600 !important;
+    color: #ffa500 !important;
+    box-shadow: 0 0 31px;
+}
+
+.btn-primary-custom:hover {
+    box-shadow: 1px 1px 10px 2px rgba(205, 164, 52, 0.4);
+}
+
+.btn-primary-custom:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            #ffa500,
+            transparent
+    );
+    transition: all 650ms;
+}
+
+.btn-primary-custom:hover:before {
+    left: 100%;
+}
+
+.btn-primary-custom:disabled,
+.btn-primary-custom[disabled] {
+    background-color: #646464 !important;
+    color: white;
+    pointer-events: none;
+    opacity: .65;
+}
+
+@media screen and (max-width: 1028px) {
+    .content {
+        right: 5vw;
+        left: 5vw;
+        width: 90vw;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 180px) {
+    .social-container img {
+        display: block;
+    }
+}
+
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear,
+    40% 0%,
+    75% 84%,
+    from(#ffd700),
+    to(#ffa500),
+    color-stop(.6,#ffa500))
+}
